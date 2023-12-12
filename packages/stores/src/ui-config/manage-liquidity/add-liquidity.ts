@@ -512,13 +512,10 @@ export class ObservableAddLiquidityConfig extends ManageLiquidityConfigBase {
           .lt(osmoOutAmountInfo.outAmount.toDec())
           ? osmoOutAmountInfo.outAmount.sub(new Dec(OSMO_MEDIUM_TX_FEE))
           : osmoOutAmountInfo.outAmount;
-    
-        // Ensure the transaction fee is deducted from the total amount
-        const finalOsmoOutAmount = osmoOutAmount.sub(new Dec(OSMO_MEDIUM_TX_FEE));
-    
+        
         return this.setAmountAt(
           osmoIndex,
-          finalOsmoOutAmount
+          osmoOutAmount
             .trim(true)
             .shrink(true)
             .maxDecimals(6)
