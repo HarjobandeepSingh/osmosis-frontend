@@ -512,19 +512,21 @@ export class ObservableAddLiquidityConfig extends ManageLiquidityConfigBase {
           .lt(osmoOutAmountInfo.outAmount.toDec())
           ? osmoOutAmountInfo.outAmount.sub(new Dec(OSMO_MEDIUM_TX_FEE))
           : osmoOutAmountInfo.outAmount;
-
+    
+        // Ensure the transaction fee is deducted from the total amount
+        const finalOsmoOutAmount = osmoOutAmount.sub(new Dec(OSMO_MEDIUM_TX_FEE));
+    
         return this.setAmountAt(
           osmoIndex,
-          osmoOutAmount
+          finalOsmoOutAmount
             .trim(true)
             .shrink(true)
-            /** osmo is used to pay tx fees, should have some padding left for future tx? if no padding needed maxDecimals to 6 else 2*/
             .maxDecimals(6)
             .locale(false)
             .toString(),
           true
         );
-      }
+    }
 
       /**TODO: should use cheaper coin to setAmount for higher accuracy*/
       const baseOutAmountInfo = outAmountInfoList.find((outAmountInfo) => {
