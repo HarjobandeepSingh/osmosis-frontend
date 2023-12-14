@@ -799,6 +799,7 @@
     "earnWith": "Ganhe com {denom}",
     "explorePools": "Explorar piscinas",
     "stakeYourDenomToEarn": "Aposte seu {denom} para ganhar uma {apr} % APR",
+    "stakeYourDenomToEarnNoAPR": "Aposte seu {denom} para ganhar recompensas",
     "provideLiquidity": "Forneça liquidez e ganhe com taxas e swaps",
     "yourBalance": "Seu balanço",
     "pastDaysReturns": "Retornos do dia anterior",
@@ -831,5 +832,9 @@
   "unlistedAssetsEnabled": "Recursos não listados ativados",
   "unlistedAssetsDisabled": "Recursos não listados desativados",
   "unlistedAssetsEnabledForSession": "Ativos não listados ativados para esta sessão. Para desativar, abra uma nova guia ou anexe `show_unlisted_assets=false`.",
-  "disclaimer": "Isenção de responsabilidade"
+  "disclaimer": "Isenção de responsabilidade",
+  "namada": {
+    "description": "Usuários da Osmosis podem ter direito ao pedido de lançamento do Namada.",
+    "link": "Verifique sua elegibilidade para $NAM aqui!"
+  }
 }

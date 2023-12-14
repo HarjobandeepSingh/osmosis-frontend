@@ -799,6 +799,7 @@
     "earnWith": "透過{denom}賺錢",
     "explorePools": "探索泳池",
     "stakeYourDenomToEarn": "質押您的{denom}即可賺取{apr} % 年利率",
+    "stakeYourDenomToEarnNoAPR": "質押您的{denom}以獲得獎勵",
     "provideLiquidity": "提供流動性並賺取費用和掉期費用",
     "yourBalance": "您的餘額",
     "pastDaysReturns": "過去一天的回報",
@@ -831,5 +832,9 @@
   "unlistedAssetsEnabled": "啟用非上市資產",
   "unlistedAssetsDisabled": "非上市資產已停用",
   "unlistedAssetsEnabledForSession": "為此會話啟用了未列出的資產。若要停用開啟新選項卡，或附加「show_unlisted_assets=false」。",
-  "disclaimer": "免責聲明"
+  "disclaimer": "免責聲明",
+  "namada": {
+    "description": "Osmosis 用戶可能有資格參加 Namada 發布申請。",
+    "link": "在此檢查您的 $NAM 資格！"
+  }
 }
